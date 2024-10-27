@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-16T21:13:55 BDT" name="Default suite" finished-at="2024-10-16T21:14:28 BDT" duration-ms="33011">
+    <groups>
+    </groups>
+    <test started-at="2024-10-16T21:13:55 BDT" name="Default test" finished-at="2024-10-16T21:14:28 BDT" duration-ms="33011">
+      <class name="woocommece.DarkModeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:woocommece.DarkModeTest@7f485fda]" started-at="2024-10-16T21:13:55 BDT" name="setUp" finished-at="2024-10-16T21:14:06 BDT" duration-ms="10925" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="changeFloatingSwitchStyle()[pri:0, instance:woocommece.DarkModeTest@7f485fda]" started-at="2024-10-16T21:14:06 BDT" name="changeFloatingSwitchStyle" finished-at="2024-10-16T21:14:13 BDT" duration-ms="7036" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div data-size="1" class="wp-dark-mode-ignore wp-dark-mode-switch ignore dummy wp-dark-mode-switch-20   dummy opacity-60 pointer-events-none">...</div> is not clickable at point (576, 525). Other element would receive the click: <div tabindex="0" class="wp-dark-mode-locked bg-gray-50 ring-1 ring-[#ffedd5] flex flex-col items-center justify-center transition duration-75 rounded-lg relative cursor-pointer w-36 h-36">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec8c3bf6035a8b18336308a3287b0260, clickElement {id=f.638F97606E356B09858732055E2B2BE7.d.C73DD1F4EF8E47310724F834DBEEC5B5.e.96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\IT\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58350/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ec8c3bf6035a8b18336308a3287b0260)] -> xpath: //div[@class='wp-dark-mode-ignore wp-dark-mode-switch ignore dummy wp-dark-mode-switch-20   dummy opacity-60 pointer-events-none']]
+Session ID: ec8c3bf6035a8b18336308a3287b0260]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div data-size="1" class="wp-dark-mode-ignore wp-dark-mode-switch ignore dummy wp-dark-mode-switch-20   dummy opacity-60 pointer-events-none">...</div> is not clickable at point (576, 525). Other element would receive the click: <div tabindex="0" class="wp-dark-mode-locked bg-gray-50 ring-1 ring-[#ffedd5] flex flex-col items-center justify-center transition duration-75 rounded-lg relative cursor-pointer w-36 h-36">...</div>
+  (Session info: chrome=129.0.6668.101)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ec8c3bf6035a8b18336308a3287b0260, clickElement {id=f.638F97606E356B09858732055E2B2BE7.d.C73DD1F4EF8E47310724F834DBEEC5B5.e.96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\IT\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58350/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ec8c3bf6035a8b18336308a3287b0260)] -> xpath: //div[@class='wp-dark-mode-ignore wp-dark-mode-switch ignore dummy wp-dark-mode-switch-20   dummy opacity-60 pointer-events-none']]
+Session ID: ec8c3bf6035a8b18336308a3287b0260
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at woocommece.DarkModeTest.changeFloatingSwitchStyle(DarkModeTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeFloatingSwitchStyle -->
+        <test-method signature="testEnableAdminDarkMode()[pri:0, instance:woocommece.DarkModeTest@7f485fda]" started-at="2024-10-16T21:14:13 BDT" name="testEnableAdminDarkMode" finished-at="2024-10-16T21:14:27 BDT" duration-ms="14174" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div//div[@class='relative w-10 h-full rounded-full transition duration-100 bg-slate-200']//span[@class='w-5 h-5 flex rounded-full mt-0.5 ml-0.5 transition duration-100 border-4 border-white bg-slate-200'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\IT\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58350/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ec8c3bf6035a8b18336308a3287b0260]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div//div[@class='relative w-10 h-full rounded-full transition duration-100 bg-slate-200']//span[@class='w-5 h-5 flex rounded-full mt-0.5 ml-0.5 transition duration-100 border-4 border-white bg-slate-200'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.101, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\IT\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58350}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58350/devtoo..., se:cdpVersion: 129.0.6668.101, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ec8c3bf6035a8b18336308a3287b0260
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at woocommece.AdminDashboardPage.enableAdminDarkMode(AdminDashboardPage.java:44)
+at woocommece.DarkModeTest.testEnableAdminDarkMode(DarkModeTest.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEnableAdminDarkMode -->
+        <test-method signature="validateDarkModeOnAdminDashboard()[pri:0, instance:woocommece.DarkModeTest@7f485fda]" started-at="2024-10-16T21:14:27 BDT" name="validateDarkModeOnAdminDashboard" finished-at="2024-10-16T21:14:28 BDT" duration-ms="773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateDarkModeOnAdminDashboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:woocommece.DarkModeTest@7f485fda]" started-at="2024-10-16T21:14:28 BDT" name="tearDown" finished-at="2024-10-16T21:14:28 BDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- woocommece.DarkModeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
