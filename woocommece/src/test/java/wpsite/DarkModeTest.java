@@ -1,4 +1,4 @@
-package woocommece;
+package wpsite;
 
 
 import org.openqa.selenium.By;
