@@ -1,4 +1,5 @@
 package wpsite;
+import io.github.cdimascio.dotenv.Dotenv;
 
 
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,8 @@ import org.testng.annotations.AfterTest;
 public class BaseTest {
 	
     WebDriver driver;
-
+    Dotenv dotenv = Dotenv.load();
+    
 	@BeforeTest
     public void setUp() {
     	
@@ -20,9 +22,12 @@ public class BaseTest {
 	      driver.get("http://localhost/wordpress/wp-login.php?");
 	      driver.manage().window().maximize();
 	      
+	      String username = dotenv.get("USERNAME");
+	      String password = dotenv.get("PASSWORD");
+	      
 	     // Log in to the AdminDashboard
-	        driver.findElement(By.id("user_login")).sendKeys("root");
-	        driver.findElement(By.id("user_pass")).sendKeys("root"); 
+	        driver.findElement(By.id("user_login")).sendKeys("username");
+	        driver.findElement(By.id("user_pass")).sendKeys("password"); 
 	        driver.findElement(By.id("wp-submit")).click();
 	   
     }
