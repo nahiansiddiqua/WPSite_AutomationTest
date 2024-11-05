@@ -25,14 +25,10 @@
 <ol>
 <li><strong>Clone the repository</strong>:</li>
     <pre><code>git clone https://github.com/nahiansiddiqua/WPSite_AutomationTest.git
-    cd woocommece</code></pre>
-    <p>To install dependencies:</p>
+cd woocommece</code></pre>
+<li>Install dependencies:</li>
     <pre><code>mvn clean install</code></pre>
-    <p>This command will:</p>
-    <ul>
-      <li><strong>Download and install all required libraries</strong> for the project.</li>
-    </ul>
-</li>
+    <p>This command will download and install all required libraries for the project.</p>
 </ol>
 
 <h2>Environment Setup</h2>
