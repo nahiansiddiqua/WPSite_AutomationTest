@@ -23,10 +23,16 @@
 
 <h2>Installation</h2>
 <ol>
-    <li><strong>Clone the repository</strong>:</li>
-    <li><strong>Install dependencies</strong>:
-        <p>Ensure that all dependencies are correctly installed
-    </li>
+<li><strong>Clone the repository</strong>:</li>
+    <pre><code>git clone https://github.com/nahiansiddiqua/WPSite_AutomationTest.git
+    cd woocommece</code></pre>
+    <p>To install dependencies:</p>
+    <pre><code>mvn clean install</code></pre>
+    <p>This command will:</p>
+    <ul>
+      <li><strong>Download and install all required libraries</strong> for the project.</li>
+    </ul>
+</li>
 </ol>
 
 <h2>Environment Setup</h2>
